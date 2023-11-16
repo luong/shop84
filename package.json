@@ -4,8 +4,14 @@
   "private": true,
   "author": "luong",
   "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": ""
+    "build": "pnpm --stream -r run build",
+    "dev": "pnpm --stream -r run dev",
+    "start": "pnpm --stream -r run statr"
   },
   "devDependencies": {
     "ts-node": "^10.9.1",

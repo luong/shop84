@@ -1,0 +1,17 @@
+{
+  "name": "@luong/shop84-admin",
+  "version": "0.1.0",
+  "private": true,
+  "author": "luong",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && tsc-alias -p tsconfig.json"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  }
+}
