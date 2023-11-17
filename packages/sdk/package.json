@@ -1,0 +1,29 @@
+{
+  "name": "@luong/shop84-sdk",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "author": {
+    "name": "luong",
+    "email": "luongfox@gmail.com"
+  },
+  "scripts": {
+    "build": "tsc && tsc-alias -p tsconfig.json"
+  },
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luong/luong84.git",
+    "directory": "packages/sdk"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
