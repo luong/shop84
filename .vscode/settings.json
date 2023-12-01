@@ -1,4 +1,7 @@
 {
     "editor.tabSize": 2,
-    "editor.semanticTokenColorCustomizations": {}
+    "editor.semanticTokenColorCustomizations": {},
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 150,
+    "prettier.printWidth": 150
 }

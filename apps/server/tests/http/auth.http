@@ -1,0 +1,12 @@
+# Variables
+@endpoint = http://localhost:4000
+
+# Login
+POST {{endpoint}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "luong@12g.co",
+  "password": "Lp345678#"
+}
+###

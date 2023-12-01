@@ -1,0 +1,21 @@
+# Variables
+@endpoint = http://localhost:4000
+@idToken = eyJraWQiOiJ5c2hubjVwN0dUajdhbXc2RFFQdG8rMWl1M2VWWUx6Wk1STGFFSUVKbW9ZPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI1NGU4NzQxOC0yMGMxLTcwN2MtNzJlYS00MDEwZjAwNDIxMmUiLCJjb2duaXRvOmdyb3VwcyI6WyJhZG1pbiJdLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfSkdmbm5vZ0hRIiwiY29nbml0bzp1c2VybmFtZSI6IjU0ZTg3NDE4LTIwYzEtNzA3Yy03MmVhLTQwMTBmMDA0MjEyZSIsIm9yaWdpbl9qdGkiOiIzMGMxMmVlNS04NmU3LTQ2OTgtYTc0Yy0wMjU4ODU2YWUxMjYiLCJhdWQiOiIxZG42ZmpybjJuMGMya3VnZzRrN2JiZHU0NiIsImV2ZW50X2lkIjoiZmYwMDNjMjktNTE0OC00NDk4LTljOTItMzFhNzA3NzUwNDExIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MDEzODc2OTAsImV4cCI6MTcwMTQ3NDA5MCwiaWF0IjoxNzAxMzg3NjkwLCJqdGkiOiIxOTJhNzI0Yi0zOWU1LTRiNDEtYjEwOC0xNWUxNWNmNTk2NWIiLCJlbWFpbCI6Imx1b25nQDEyZy5jbyJ9.mzK4Oa4rNpmodls4pSsaCt1nCvoXe8ywh6kg3bW_ZvzxweBIzwYnc7OjfNuv_AUZr30KrtpeOHqU2bwdzWgDy09V51ElG4TFd5GPvfo_oYZHanLVA2NtB_r-KKlsTGeuHgvwTNwbH05HN5vfuY79PMa0vUbQsI1iHJRLVLx9qcWVYfgqh6dAEBR-wPyFJVKe-d4O-6336-83RC7bJYxOm3u4k2w48nz77F8n1LhGKUAVpLqtZf4xHzU1orFUL1o8FQFqK7JUfABZNs3md4qawgoYqr38gVK0-QRvopX_LbARwGyrFukTSx8T3AOlf3Y1-zKW5t85xMxxN3q20hdSpQ
+
+# Add a new customer
+POST {{endpoint}}/customers
+Content-Type: application/json
+Authorization: Bearer {{idToken}}
+
+{
+  "emailx": "luong@12g.co",
+  "firstName": "Luong",
+  "lastName": "Le"
+}
+###
+
+# Find an existing customer base on ID
+GET {{endpoint}}/customers/54e87418-20c1-707c-72ea-4010f004212e
+Accept: application/json
+Authorization: Bearer {{idToken}}
+###

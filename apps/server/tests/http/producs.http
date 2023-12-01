@@ -1,0 +1,6 @@
+# Variables
+@endpoint = http://localhost:4000
+
+# Search products
+GET {{endpoint}}/products
+###
