@@ -1,6 +1,6 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
-@Entity()
+@Entity({ name: 'Category' })
 export class Category {
 	@PrimaryGeneratedColumn()
 	id: number;
@@ -8,9 +8,9 @@ export class Category {
 	@Column()
 	name: string;
 
-	@Column()
+	@CreateDateColumn({ type: 'timestamp', nullable: true })
 	createdAt: Date;
 
-	@Column()
+	@UpdateDateColumn({ type: 'timestamp', nullable: true })
 	updatedAt: Date;
 }

@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, CreateDateColumn, Up
 import { ProductStatus } from '@/entity/product-status';
 import { Category } from '@/entity/category';
 
-@Entity()
+@Entity({ name: 'Product' })
 export class Product {
 	@PrimaryGeneratedColumn({ type: 'bigint' })
 	id: number;

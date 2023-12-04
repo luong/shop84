@@ -11,9 +11,12 @@ export default () => ({
 		username: process.env.DATABASE_USERNAME,
 		password: process.env.DATABASE_PASSWORD,
 		database: process.env.DATABASE_NAME,
-		entities: [__dirname + '/../**/entity/*{.ts,.js}'],
-		migrations: [__dirname + '/../**/migrations/*{.ts,.js}'],
-		migrationsTableName: 'migrations'
+		entities: ['src/entity/*.ts'],
+		migrations: ['src/migrations/*.ts'],
+		migrationsTableName: 'Migration',
+		migrationsRun: true,
+		synchronize: false,
+		charset: 'utf8mb4'
 	},
 
 	aws: {

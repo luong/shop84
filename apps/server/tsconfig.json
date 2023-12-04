@@ -3,6 +3,7 @@
     "module": "NodeNext",
     "declaration": true,
     "removeComments": true,
+    "strictPropertyInitialization": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
@@ -19,6 +20,6 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]
-    },
+    }
   }
 }
