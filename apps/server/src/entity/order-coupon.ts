@@ -1,7 +1,6 @@
 import { Order } from '@/entity/order';
-import { Product } from '@/entity/product';
 import { Column, CreateDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
-import { Coupon } from './coupon';
+import { Coupon } from '@/entity/coupon';
 
 @Entity({ name: 'OrderCoupon' })
 export class OrderCoupon {
