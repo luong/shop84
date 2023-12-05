@@ -1,12 +1,13 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, ManyToOne } from 'typeorm';
+import { Customer } from '@/entity/customer';
 
 @Entity({ name: 'Address' })
 export class Address {
 	@PrimaryGeneratedColumn({ type: 'bigint' })
 	id: number;
 
-	@Column({ type: 'varchar', length: 191 })
-	customerId: string;
+	@ManyToOne(() => Customer)
+	customer: Customer;
 
 	@Column({ type: 'varchar', length: 45 })
 	firstName: string;
